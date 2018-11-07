@@ -10,3 +10,9 @@ font-family: 'MyFont';
     font-family: 'MyFont';
     background: url('./icon.png');
 }
+button{
+  width: 100px;
+  height: 100px;
+  background: rgba(0, 0, 0, .4);
+  color: #fff;
+}
