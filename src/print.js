@@ -1,3 +1,4 @@
-export default function printMe() {
-    console.log('ssss!');
+export default function PrintMe () {
+    console.log(5555)
 }
+
