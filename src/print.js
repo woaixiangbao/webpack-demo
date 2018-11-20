@@ -1,4 +1,4 @@
 export default function PrintMe () {
-    console.log(5555)
+    console.log(6666)
 }
 
