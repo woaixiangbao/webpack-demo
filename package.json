@@ -1,6 +1,6 @@
 {
   "name": "webpack-demo",
-  "sideEffects":false,
+  "sideEffects":false, // 用来删减没有用到的export，代码压缩时会减少体积
   "version": "1.0.0",
   "description": "",
   "private": true,
