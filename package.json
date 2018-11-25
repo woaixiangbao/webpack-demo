@@ -1,14 +1,15 @@
 {
   "name": "webpack-demo",
-  "sideEffects":false, // 用来删减没有用到的export，代码压缩时会减少体积
+  "sideEffects": false,
+  "commenForSideEffects": "使用的是tree shakong。用来删减没有用到的export，代码压缩时会减少体积，当然mode需要指定为production模式。",
   "version": "1.0.0",
   "description": "",
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
+    "build": "webpack --config webpack.prod.js",
     "watch": "webpack --watch",
-    "start": "webpack-dev-server --open",
+    "start": "webpack-dev-server --open --config webpack.dev.js",
     "server": "node server.js"
   },
   "keywords": [],
@@ -21,10 +22,12 @@
     "file-loader": "^2.0.0",
     "html-webpack-plugin": "^3.2.0",
     "style-loader": "^0.23.1",
+    "uglifyjs-webpack-plugin": "^2.0.1",
     "webpack": "^4.24.0",
     "webpack-cli": "^3.1.2",
     "webpack-dev-middleware": "^3.4.0",
-    "webpack-dev-server": "^3.1.10"
+    "webpack-dev-server": "^3.1.10",
+    "webpack-merge": "^4.1.4"
   },
   "dependencies": {
     "lodash": "^4.17.11"
