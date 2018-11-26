@@ -5,16 +5,16 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   entry: {
     index: './src/index.js',
-    // another: './src/another-module.js'
+    another: './src/another-module.js'
   },
   plugins: [
     new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
-      title: 'Production'
+      title: 'Cache'
     })
   ],
   output: {
-    filename: '[name].bundle.js',
+    filename: '[name].[chunkhash].js',
     chunkFilename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist')
   },
