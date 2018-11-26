@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1],{4:function(o,n,s){"use strict";s.r(n),console.log("第一次加载print.js"),n.default=(()=>{console.log(6666)})}}]);
